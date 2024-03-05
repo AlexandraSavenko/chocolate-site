@@ -1,12 +1,38 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 ul {
   list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
+
 a {
   text-decoration: none;
+  color: currentColor;
 }
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,6 +46,13 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .title {
   font-weight: 600;
   font-size: 24px;
@@ -29,10 +62,16 @@ a {
   text-align: center;
   color: #111;
 }
+
 .title span {
   color: #fd9222;
 }
 /* ===============HEADER=============== */
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -50,9 +89,21 @@ a {
   letter-spacing: -0.02em;
   color: #111;
 }
+.header-menu-link:hover {
+  color: #fd9222;
+}
+.header-menu-link:focus {
+  color: #fd9222;
+  font-style: italic;
+}
 /* =============HERO================ */
 .hero {
+  padding-bottom: 80px;
+}
+.hero-wrap {
+  padding: 380px 40px 40px 40px;
   background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -61,6 +112,7 @@ a {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
 }
 
 .hero-buy-btn {
@@ -85,6 +137,8 @@ a {
 /* =================FEATURES================== */
 .features {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .features-list {
 }
@@ -103,8 +157,13 @@ a {
 }
 /* ====================TASTE=========== */
 .taste {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .taste-text {
@@ -114,6 +173,9 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .taste-list {
 }
@@ -293,11 +355,26 @@ a {
 .footer-contacts-item {
 }
 
+.footer-contacts-link {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
 .footer-nav {
 }
+
 .footer-menu-list {
 }
+
 .footer-menu-item {
 }
 .footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
 }
