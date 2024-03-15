@@ -127,6 +127,7 @@ img {
   padding: 380px 40px 40px 40px;
   background-color: rgba(17, 17, 17, 0.6);
   border-radius: 30px;
+  background-image: url(../images/chocolate_main.jpg);
 }
 
 .hero-title {
@@ -200,8 +201,8 @@ img {
 }
 /* ====================TASTE=========== */
 .taste {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .taste-title {
   max-width: 412px;
@@ -246,8 +247,14 @@ img {
 }
 /* =============MADE============ */
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.made-title {
+.made-title::before {
+  content: "\1F36B";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
 }
 
 .made-img {
@@ -270,11 +277,15 @@ img {
 }
 /* =========PRODUCTS============= */
 .products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .products-title {
+  margin-bottom: 50px;
 }
 
 .products-list {
+  display: flex;
 }
 .products-item {
 }
@@ -301,6 +312,8 @@ img {
 }
 /* =============SELLERS========= */
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .sellers-title {
   font-weight: 600;
@@ -310,13 +323,18 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #fd9222;
+  margin-bottom: 60px;
 }
 .sellers-title span {
   color: #111;
 }
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 .sellers-item {
+  width: calc((100% - 32) / 3);
+  border-radius: 15px 15px 0 0;
 }
 .sellers-img {
 }
@@ -327,10 +345,18 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
 }
 
 /* ===========LOVED=========== */
 .loved {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .loved-title {
