@@ -336,7 +336,31 @@ img {
   width: calc((100% - 32) / 3);
   border-radius: 15px 15px 0 0;
 }
+.sellers-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
 .sellers-img {
+}
+.sellers-cover-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  background-color: gray;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  transform: translateY(100%);
+  transition: transform 300ms easy;
+}
+.sellers-item:hover .sellers-cover-text {
+  transform: translateY(0);
 }
 .sellers-subtitle {
   font-weight: 600;
