@@ -421,6 +421,9 @@ img {
 .footer {
   background: #1e1823;
 }
+.footer-top {
+  display: flex;
+}
 .footer-text {
   font-weight: 500;
   font-size: 28px;
